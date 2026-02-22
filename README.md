@@ -1,30 +1,62 @@
 # Lazy Susan
 
-**Helping struggling family-owned restaurants in Brooklyn & Queens get found.**
+**A platform to help struggling family-owned restaurants in Brooklyn & Queens get discovered — before they disappear.**
 
 ---
 
-There are incredible restaurants all over Brooklyn and Queens that most people will never hear about. They've been on the same corner for 20 years, run by the same family, serving food that's better than half the places with a line out the door. But they can't afford ads, they're not on TikTok, and they don't have a PR team. So they stay empty.
+## The Problem
 
-Lazy Susan puts them on the map. People submit restaurants they think deserve more customers, we tell their story, and struggling spots get pushed to the top so they're seen first.
+Some of the best restaurants in New York City are dying quietly. Family-owned spots that have been feeding neighborhoods for decades are closing — not because the food isn't incredible, but because nobody knows they're there. They can't afford ads. They don't have Instagram strategies. They're just a person in a kitchen, cooking the way their parents taught them, hoping someone walks through the door.
 
-## What it does
+## The Solution
 
-- Browse and filter restaurants by borough, neighborhood, cuisine
-- Restaurants flagged as "needs support" get prioritized
-- Anyone can submit a spot — we review every submission before it goes live
-- Each listing is a story, not a rating
+Lazy Susan is a community-powered directory that gives these restaurants the visibility they've never had. No star ratings. No reviews. Just real stories about real people and the food they pour their lives into.
 
-## Stack
+Anyone can submit a restaurant they think deserves attention. We review every submission, write up their story, and put them on the map — with struggling restaurants prioritized so the spots that need help the most get seen first.
 
-Next.js 16 · TypeScript · Tailwind v4 · Supabase · Vercel
+## How It Works
 
-## Run it locally
+1. **Someone submits a restaurant** — a neighbor, a regular, anyone who knows a spot that's struggling
+2. **We review and publish their story** — not a rating, a real narrative about the people behind the food
+3. **People discover them and show up** — no delivery apps, no middlemen, just a customer walking through the door
+
+## Features
+
+- **Browse & Search** — filter restaurants by borough, neighborhood, and cuisine type
+- **Needs Support** — struggling restaurants are flagged and prioritized so they get seen first
+- **Community Submissions** — anyone can submit a restaurant with their story and photos
+- **Admin Review** — every submission is reviewed before going live
+- **Restaurant Stories** — each listing tells the story behind the food, not just a menu
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Database:** Supabase (PostgreSQL)
+- **Storage:** Supabase Storage (photo uploads)
+- **Deployment:** Vercel (recommended)
+
+## Getting Started
 
 ```bash
+# Install dependencies
 npm install
-cp .env.example .env.local  # add Supabase credentials
+
+# Set up environment variables
+cp .env.example .env.local
+# Add your Supabase URL, anon key, and admin password
+
+# Run the dev server
 npm run dev
 ```
 
-Currently covering Brooklyn & Queens.
+Open [http://localhost:3000](http://localhost:3000) to see it running.
+
+## Currently Covering
+
+Brooklyn & Queens — expanding to other boroughs as the community grows.
+
+---
+
+*Made with heart in Brooklyn & Queens.*
